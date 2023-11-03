@@ -1,0 +1,38 @@
+
+nav {
+    border-bottom: 1px solid black;
+    background-color:antiquewhite;
+
+}
+
+a:link {
+    color:darkslateblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding-left: 3;
+    padding-top: 10px;
+    color: antiquewhite;
+}
+
+.nav-list-item {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+/*Styling of the responsive gallery*/
+
