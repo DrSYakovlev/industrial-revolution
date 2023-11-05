@@ -76,6 +76,20 @@ div.desc:hover {
     width: 19.99999%;
 }
 
+.bg-extra {
+    background-image: url("./assets/images/extraread-background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.extra-story-title {
+    color: brown;
+    background-color:antiquewhite;
+    font-size:x-large;
+
+
+}
 /*
 @media only screen and (max-width: 700px) {
     .responsive {
