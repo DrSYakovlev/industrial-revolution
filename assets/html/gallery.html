@@ -1,133 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallety</title>
-    <link rel="stylesheet" href="../css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
     <style>
-      body,
-      html {
+      
+      html, body {
         height: 100%;
+        font-family:'Courier New', Courier, monospace;
+        font-size: large;
+        font-weight: bold;
+        color:darkblue;        
       }
+
       .bg {
         background-image: url("../images/gallery-background.jpg");
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        }  
+      div.gallery {
+        border: 2px solid steelblue;
       }
-      div {
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+      div.gallery:hover {
+        border: 3px solid slateblue;
       }
-      footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
+
+      div.gallery img {
         width: 100%;
-        color: black;
-        text-align: right;
-        padding-right: 20px;
-        padding-left: 400px;
+        height: auto;
       }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      div.desc:hover {
+        font-size:130%;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+       width: 19.99999%;
+      }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: right;
+      font-size: larger;
+      padding-left: 200px;
+      padding-right: 20px;
+      }
+
     </style>
-  </head>
-  <body>
-    <div class="bg">
-      <span class="responsive">
+</head>
+
+<body class="bg">    
+    <div class="responsive">
         <div class="gallery">
           <a target="_blank" href="../images/chronometer-gallery.jpg">
-            <img
-              src="../images/chronometer-gallery.jpg"
-              alt="Marine Chronometer"
-              width="600"
-              height="400"
-            />
+            <img src="../images/chronometer-gallery.jpg" alt="Marine chronometer" width="600">
           </a>
-          <div class="desc">
-            Marine chronometer, <em>Royal Museum Greenwich</em>.
-          </div>
+          <div class="desc">Marine chronometer, from the collection of <em>SJX Antiquities</em></div>
         </div>
-      </span>
-      <span class="responsive">
+      </div>      
+      
+      <div class="responsive">
         <div class="gallery">
           <a target="_blank" href="../images/toothbrush-gallery.jpg">
-            <img
-              src="../images/toothbrush-gallery.jpg"
-              alt="Vintage Toothbrushes"
-              width="600"
-              height="400"
-            />
+            <img src="../images/toothbrush-gallery.jpg" alt="Toothbrush" width="600">
           </a>
-
-          <div class="desc">
-            Various styles of the first mass-produced toothbrushes, 1886. From
-            the historica collection of <em>National Library of Medicine</em>.
-          </div>
+          <div class="desc">Types of antique toothbrushes, <em>The National Library of Medicine</em></div>
         </div>
-      </span>
-
-      <span class="responsive">
+      </div>
+      
+      <div class="responsive">
         <div class="gallery">
           <a target="_blank" href="../images/pears_soap-gallery.jpg">
-            <img
-              src="../images/pears_soap-gallery.jpg"
-              alt="Pear's Soup Advertisement"
-              width="600"
-              height="400"
-            />
+            <img src="../images/pears_soap-gallery.jpg" alt="Pear's soap" width="600">
           </a>
-          <div class="desc">
-            Metal wall sign advertising Pear's Soap. From the collection of the
-            <em>British Metal Signs</em>, Knockin, UK.
-          </div>
+          <div class="desc">Metal shield advertising Pear's soap</div>
         </div>
-      </span>
-
-      <span class="responsive">
+      </div>
+      
+      <div class="responsive">
         <div class="gallery">
           <a target="_blank" href="../images/pencil_notetaking-gallery.jpg">
-            <img
-              src="../images/pencil_notetaking-gallery.jpg"
-              alt="Pen Notetaking"
-              width="600"
-              height="400"
-            />
+            <img src="../images/pencil_notetaking-gallery.jpg" alt="Taking notes with a pencil" width="600">
           </a>
-          <div class="desc">
-            Note taking with a pencil. Featured is well-recognised traditional
-            yellow Chinese royalty and prosperity colour. Taken from
-            <em>Morning Coach</em>.
-          </div>
+          <div class="desc">Taking notes with a pencil. Featured is a yellow colour cymbolising royalty and prosperity in China</div>
         </div>
-      </span>
+      </div>
 
-      <span class="responsive">
+      <div class="responsive">
         <div class="gallery">
-          <a target="_blank" href="../images/viltaic_pile-gallery.jpg">
-            <img
-              src="../images/viltaic_pile-gallery.jpg"
-              alt="Voltaic Pile"
-              width="600"
-              height="400"
-            />
+          <a target="_blank" href="../images/viltaic_pile-1.jpg">
+            <img src="../images/viltaic_pile-1.jpg" alt="Voltaic pile" width="600">
           </a>
-          <div class="desc">
-            Voltaic pile is the sequence of Cu and Zn electrodes separated by
-            porous layer impregnated with an electrolyte,
-            <em>By Markkv - Own work, Wikipedia</em>.
-          </div>
+          <div class="desc">Voltaic pile built of layers of electrolyte, sandwiched between copper and zink electrodes, from the collection of the <em>University of Pavia, Hystory Museum</em></div>
         </div>
-      </span>
-      <footer>
-        <h3>
-          Page background: Industrial urban landscape
-          <em>by Trevor Grimshaw</em>.<br />
-          From the collection of <em>Clark Art Ltd</em>. Features the new look,
-          spirit and spectacular changes brought by the
-          <em>Industrial Revolution</em> into a traditional environment...
-        </h3>
-      </footer>
-    </div>
-  </body>
+      </div>
+      
+      
+      
+      <div class="footer">
+        <p>Backround image is a painting by Trevor Grimshaw. It highlights the way <em>the Industrialisation</em> changed our traditional urban landscape</p>
+      </div>
+      
+</body>
 </html>
