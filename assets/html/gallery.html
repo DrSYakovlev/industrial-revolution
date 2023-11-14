@@ -26,7 +26,7 @@
       }
 
       div.gallery:hover {
-        border: 3px solid slateblue;
+        border: 4px solid slateblue;
       }
 
       div.gallery img {
@@ -40,7 +40,7 @@
       }
 
       div.desc:hover {
-        font-size:130%;
+        color: blueviolet;
       }
 
       * {
@@ -63,6 +63,19 @@
       padding-left: 200px;
       padding-right: 20px;
       }
+
+  @media only screen and (max-width: 900px) {
+    .responsive {
+      width: 100%;
+    
+  }
+      .bg {
+        background-image: none;
+        background-color: beige;
+      }
+    p {display: none;}
+      
+}
 
     </style>
 </head>
@@ -115,7 +128,7 @@
       
       
       
-      <div class="footer">
+      <div class="footer" class="responsive">
         <p>Backround image is a painting by Trevor Grimshaw. It highlights the way <em>the Industrialisation</em> changed our traditional urban landscape</p>
       </div>
       
